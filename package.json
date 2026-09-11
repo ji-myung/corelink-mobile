@@ -8,7 +8,10 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "print": "node design/print/gen-print.mjs",
+    "print:samples": "node design/print/gen-print.mjs --samples",
+    "print:edit": "node design/print/editor.mjs"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,9 @@
     "@types/node": "^26.4.1",
     "@types/qrcode": "^1.5.6",
     "jsdom": "^30.0.1",
+    "jsqr": "^1.4.0",
+    "playwright-core": "^1.62.1",
+    "pngjs": "^7.0.0",
     "qrcode": "^1.5.4",
     "typescript": "^7.0.2",
     "vite": "^8.2.2",
